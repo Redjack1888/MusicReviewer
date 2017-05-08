@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MusicReviewer</string>
+
+   <string name="category_phrases">Your\nGenres</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_colors">Your\nLabels</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_numbers">Your\nAlbums</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_family">Your\nReviews</string>
+
+
+    <string name="sub_title">Sub Label</string>
+    <string name="main_title">Label</string>
+
+    <string name="band_name">Band or Artist name </string>
+    <string name="album_title">Album Title</string>
+
+    <string name="sub_genres_title">and related Sub Genres </string>
+    <string name="genre_title">Genre</string>
+
+ <string name="sub_label_title">Major/Sub-Major/Indie/</string>
+ <string name="label_title">Discographic Label Name</string>
+</resources>

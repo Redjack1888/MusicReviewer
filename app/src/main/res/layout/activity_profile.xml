@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:text="Here all user informations and account settings can be edited and stored."
+        android:textColor="@android:color/white"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        />
+    <LinearLayout
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/user_image"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingLeft="16dp"
+
+        />
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingLeft="8dp"
+        />
+</LinearLayout>
+    <TextView
+        android:id="@+id/profile_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my-email@gmail.com"
+        android:textStyle="italic"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:paddingLeft="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/welcome"
+        android:layout_toRightOf="@id/user_image"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_mail"
+        android:layout_toEndOf="@+id/user_image"
+        android:layout_toRightOf="@+id/user_image"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="Level:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/level_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_below="@+id/profile_mail"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="Total Points:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/point_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="245"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linearLayout"
+
+        android:layout_gravity="end"
+        android:paddingLeft="16dp"
+        android:drawableLeft="@drawable/flag_it"
+        android:drawablePadding="8dp"
+        android:text="Member Since 2017"
+        android:textStyle="italic" />
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Reviewer at:"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Redjack (http://red-jack.blogspot.com/)"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Type of reviewer:"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Consumer Reviewer"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_green_dark"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback Ratio:"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 50%"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/profile_bio_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Bio"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/profile_bio_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisi, tempus eu lacinia facilisis, laoreet ut lorem. Curabitur nulla est, tincidunt ac quam quis, tincidunt aliquam dui. Proin ut dui massa. Vivamus vel nulla nec mauris interdum condimentum egestas ut purus. Phasellus scelerisque augue a egestas ultricies."/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_margin="16dp"
+
+    android:background="@android:color/black"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/go_dashboard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Go to Dashboard"
+            android:background="@android:color/transparent"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Go to SETTINGS"
+            android:background="@android:color/transparent"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            />
+    </LinearLayout>
+
+</LinearLayout>

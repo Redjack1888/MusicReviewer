@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicreviewer.SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:text="From here user can change personal profile informations, choose preferred music genres and devices in use, take a look on Badges and Rewards earned for his activities on the App and share them with friends on social networks, add details as contact info, birthday and more. He can then change password, mail account or completely delete the account."/>
+
+    <Button
+        android:id="@+id/basic_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:text="Basic Information"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+    <Button
+        android:id="@+id/listening_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:text="Listening Preferences"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+    <Button
+        android:id="@+id/badges_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:text="Badges + Rewards"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+    <Button
+        android:id="@+id/additional_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:text="Additional info"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+    <Button
+        android:id="@+id/accounbt_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:text="Account Information"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        />
+</LinearLayout>
