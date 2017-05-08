@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">MusicReviewer</string>
 
-   <string name="category_phrases">Your\nGenres</string>
+   <string name="category_genres">Your\nGenres</string>
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Your\nLabels</string>
+    <string name="category_labels">Your\nLabels</string>
 
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Your\nAlbums</string>
+    <string name="category_albums">Your\nAlbums</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Your\nReviews</string>
+    <string name="category_reviews">Your\nReviews</string>
 
 
     <string name="sub_title">Sub Label</string>

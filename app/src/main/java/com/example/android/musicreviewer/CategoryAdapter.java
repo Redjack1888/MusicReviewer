@@ -54,16 +54,16 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
 //            Your Genres
-            return mContext.getString(R.string.category_phrases);
+            return mContext.getString(R.string.category_genres);
         } else if (position == 1) {
 //            Your Labels
-            return mContext.getString(R.string.category_colors);
+            return mContext.getString(R.string.category_labels);
         } else if (position == 2) {
 //            Your Albums
-            return mContext.getString(R.string.category_numbers);
+            return mContext.getString(R.string.category_albums);
         } else {
 //            YourReviews
-            return mContext.getString(R.string.category_family);
+            return mContext.getString(R.string.category_reviews);
         }
     }
 }
