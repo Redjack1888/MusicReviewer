@@ -12,13 +12,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of family vocabulary words.
+ * {@link Fragment} that displays a list of family vocabulary items.
  */
-public class ReviewsFragment extends Fragment {
+public class UserReviewsFragment extends Fragment {
 
 
 
-    public ReviewsFragment() {
+    public UserReviewsFragment() {
         // Required empty public constructor
     }
 

@@ -9,33 +9,33 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class DashboardActivity extends AppCompatActivity {
+public class GenreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Set the content of the activity to use the activity_main.xml layout file
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_genre);
 
         // Find the view pager that will allow the user to swipe between fragments
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        ViewPager viewPager2 = (ViewPager) findViewById(R.id.viewpager2);
 
         // Create an adapter that knows which fragment should be shown on each page
-        UserDashboardCategoryAdapter adapter = new UserDashboardCategoryAdapter(this, getSupportFragmentManager());
+        GenreCategoryAdapter adapter = new GenreCategoryAdapter(this, getSupportFragmentManager());
 
         // Set the adapter onto the view pager
-        viewPager.setAdapter(adapter);
+        viewPager2.setAdapter(adapter);
 
         // Find the tab layout that shows the tabs
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs2);
 
         // Connect the tab layout with the view pager. This will
         //   1. Update the tab layout when the view pager is swiped
         //   2. Update the view pager when a tab is selected
         //   3. Set the tab layout's tab names with the view pager's adapter's titles
         //      by calling onPageTitle()
-        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.setupWithViewPager(viewPager2);
 
 
     }
@@ -55,17 +55,15 @@ public class DashboardActivity extends AppCompatActivity {
 //                startActivity(rackIntent);
                 return true;
             case R.id.title_menu:
-                Intent findIntent = new Intent(DashboardActivity.this, FindActivity.class);
-                startActivity(findIntent);
+                Intent genresIntent = new Intent(GenreActivity.this, GenreActivity.class);
+                startActivity(genresIntent);
                 return true;
             case R.id.label_menu:
-                Intent browseIntent = new Intent(DashboardActivity.this, BrowseActivity.class);
-                startActivity(browseIntent);
                 return true;
             case R.id.logout_menu:
                 return true;
             case R.id.setting_menu:
-                Intent settingsIntent = new Intent(DashboardActivity.this, SettingsActivity.class);
+                Intent settingsIntent = new Intent(GenreActivity.this, SettingsActivity.class);
                 startActivity(settingsIntent);
                 return true;
             case R.id.help_menu:

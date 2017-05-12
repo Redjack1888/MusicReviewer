@@ -24,13 +24,24 @@
             android:label="Dashboard"
             android:windowSoftInputMode="stateHidden" />
         <activity
+            android:name=".GenreActivity"
+            android:label="Find Titles by ..." />
+        <activity
+            android:name=".LabelActivity"
+            android:label="Find Titles by ..." />
+        <activity
+            android:name=".BrowseActivity"
+            android:label="Browse Labels" />
+        <activity
             android:name=".ProfileActivity"
             android:label="Profile" />
         <activity
             android:name=".SettingsActivity"
             android:label="Settings" />
-        <activity android:name=".AlbumActivity" />
-        <activity android:name=".GenresActivity" />
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="Albums" />
+        <activity android:name=".FindActivity"></activity>
     </application>
 
 </manifest>

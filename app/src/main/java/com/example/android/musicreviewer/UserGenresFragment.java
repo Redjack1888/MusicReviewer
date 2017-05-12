@@ -1,6 +1,7 @@
 package com.example.android.musicreviewer;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,11 +13,11 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of number vocabulary words.
+ * {@link Fragment} that displays a list of phrases.
  */
-public class AlbumsFragment extends Fragment {
+public class UserGenresFragment extends Fragment {
 
-    public AlbumsFragment() {
+    public UserGenresFragment() {
         // Required empty public constructor
     }
 
@@ -27,26 +28,16 @@ public class AlbumsFragment extends Fragment {
 
         // Create a list of items
         final ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd1));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd2));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd3));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd4));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd5));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd6));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd7));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd8));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd9));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd10));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
 
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
@@ -57,22 +48,27 @@ public class AlbumsFragment extends Fragment {
         // item_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
+        // Make the {@link ListView} use the {@link ItemAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Item} in the list.
         listView.setAdapter(adapter);
 
-        // Set a click listener to play the audio when the list item is clicked on
+        // Set a click listener when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Get the {@link Item} object at the given position the user clicked on
                 Item item = items.get(position);
+                // Create a new intent to open the {@link AlbumsActivity} according to item selected
+                Intent albumIntent = new Intent(getActivity(), GenreActivity.class);
 
+                // Start the new activity
+                startActivity(albumIntent);
 
             }
         });
 
         return rootView;
     }
+
 
 }

@@ -12,11 +12,11 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of phrases.
+ * {@link Fragment} that displays a list of number vocabulary items.
  */
-public class GenresFragment extends Fragment {
+public class UserAlbumsFragment extends Fragment {
 
-    public GenresFragment() {
+    public UserAlbumsFragment() {
         // Required empty public constructor
     }
 
@@ -25,18 +25,28 @@ public class GenresFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.item_list, container, false);
 
-        // Create a list of words
+        // Create a list of items
         final ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd1));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd2));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd3));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd4));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd5));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd6));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd7));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd8));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd9));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd10));
 
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
@@ -48,14 +58,14 @@ public class GenresFragment extends Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link ItemAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // {@link ListView} will display list items for each {@link Item} in the list.
         listView.setAdapter(adapter);
 
-        // Set a click listener when the list item is clicked on
+        // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Get the {@link Word} object at the given position the user clicked on
+                // Get the {@link Item} object at the given position the user clicked on
                 Item item = items.get(position);
 
 
@@ -64,6 +74,5 @@ public class GenresFragment extends Fragment {
 
         return rootView;
     }
-
 
 }

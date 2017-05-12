@@ -55,7 +55,7 @@ public class ProfileActivity extends AppCompatActivity {
 //                startActivity(rackIntent);
                 return true;
             case R.id.title_menu:
-                Intent genresIntent = new Intent(ProfileActivity.this, GenresActivity.class);
+                Intent genresIntent = new Intent(ProfileActivity.this, GenreActivity.class);
                 startActivity(genresIntent);
                 return true;
             case R.id.label_menu:

@@ -1,16 +1,28 @@
 <resources>
     <string name="app_name">MusicReviewer</string>
 
-   <string name="category_genres">Your\nGenres</string>
+    <string name="category_genres">Your\nGenres</string>
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
     <string name="category_labels">Your\nLabels</string>
 
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_albums">Your\nAlbums</string>
+    <string name="category_suggestions">Suggested\nAlbums</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_reviews">Your\nReviews</string>
+    <string name="category_request">Your\nRequest</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="genre_available">Available\nfor Request</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="genre_listen">Listen\nNow</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="genre_most_request">Most\nRequested</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="genre_previously">No More\nAvailable</string>
 
 
     <string name="sub_title">Sub Label</string>
@@ -22,6 +34,6 @@
     <string name="sub_genres_title">and related Sub Genres </string>
     <string name="genre_title">Genre</string>
 
- <string name="sub_label_title">Major/Sub-Major/Indie/</string>
- <string name="label_title">Discographic Label Name</string>
+    <string name="sub_label_title">Major/Sub-Major/Indie/</string>
+    <string name="label_title">Discographic Label Name</string>
 </resources>

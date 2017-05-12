@@ -1,6 +1,7 @@
 package com.example.android.musicreviewer;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,11 +13,11 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of color vocabulary words.
+ * {@link Fragment} that displays a list of color vocabulary items.
  */
-public class LabelsFragment extends Fragment {
+public class UserLabelsFragment extends Fragment {
 
-    public LabelsFragment() {
+    public UserLabelsFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +26,7 @@ public class LabelsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.item_list, container, false);
 
-        // Create a list of words
+        // Create a list of items
         final ArrayList<Item> items = new ArrayList<Item>();
         items.add(new Item(R.string.sub_label_title, R.string.label_title));
         items.add(new Item(R.string.sub_label_title, R.string.label_title));
@@ -38,7 +39,7 @@ public class LabelsFragment extends Fragment {
         items.add(new Item(R.string.sub_label_title, R.string.label_title));
         items.add(new Item(R.string.sub_label_title, R.string.label_title));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
         ItemAdapter adapter = new ItemAdapter(getActivity(), items, R.color.category_phrases);
 
@@ -47,8 +48,8 @@ public class LabelsFragment extends Fragment {
         // item_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link ItemAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Item} in the list.
         listView.setAdapter(adapter);
 
         // Set a click listener to play the audio when the list item is clicked on
@@ -58,6 +59,12 @@ public class LabelsFragment extends Fragment {
 
                 // Get the {@link Item} object at the given position the user clicked on
                 Item item = items.get(position);
+                // Create a new intent to open the {@link AlbumsActivity} according to item selected
+                Intent labelIntent = new Intent(getActivity(), LabelActivity.class);
+
+                // Start the new activity
+                startActivity(labelIntent);
+
 
 
             }

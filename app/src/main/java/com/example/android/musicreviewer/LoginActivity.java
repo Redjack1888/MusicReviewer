@@ -75,10 +75,10 @@ public class LoginActivity extends AppCompatActivity {
                 username.getText().toString();
                 password.getText().toString();
                 // Create a new intent to open the {@link RackActivity}
-                Intent profileIntent = new Intent(LoginActivity.this, ProfileActivity.class);
+                Intent settingsIntent = new Intent(LoginActivity.this, SettingsActivity.class);
 
                 // Start the new activity
-                startActivity(profileIntent);
+                startActivity(settingsIntent);
             }
         });
         TextView signup = (TextView) findViewById(R.id.signup);
