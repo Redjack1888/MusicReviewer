@@ -25,25 +25,26 @@
                 android:id="@+id/username_dashboard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="Username"
                 android:layout_centerVertical="true"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
-                android:layout_alignParentLeft="true"
-                />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
 
             <TextView
                 android:id="@+id/work_dashboard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:text="Reviewer"
                 android:gravity="center_vertical"
-                android:drawableLeft="@drawable/ic_trophy_white_24dp"
+                android:drawableStart="@drawable/ic_trophy_white_24dp"
                 android:drawablePadding="16dp"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_trophy_white_24dp" />
 
         </RelativeLayout>
 
@@ -54,7 +55,7 @@
             android:padding="16dp">
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/black"
@@ -65,9 +66,10 @@
                 android:id="@+id/search_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:scaleType="center"
-                android:src="@drawable/ic_magnify_black_24dp" />
+                android:src="@drawable/ic_magnify_black_24dp"
+                android:contentDescription="search icon" />
 
         </LinearLayout>
 

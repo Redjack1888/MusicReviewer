@@ -20,14 +20,7 @@ public class GenreActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_genre.xml layout file
         setContentView(R.layout.activity_genre);
 
-        TextView genre = (TextView) findViewById(R.id.genre_selector);
-        genre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent genresIntent = new Intent(GenreActivity.this, FindActivity.class);
-                startActivity(genresIntent);
-            }
-        });
+
 
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager2 = (ViewPager) findViewById(R.id.viewpager2);
@@ -82,5 +75,16 @@ public class GenreActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void genres(View view) {
+        TextView genres = (TextView) findViewById(R.id.genre_selector);
+        genres.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent genresIntent = new Intent(GenreActivity.this, FindActivity.class);
+                startActivity(genresIntent);
+            }
+        });
     }
 }

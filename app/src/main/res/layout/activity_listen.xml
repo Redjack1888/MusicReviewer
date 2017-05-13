@@ -16,7 +16,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         app:srcCompat="@drawable/cd2"
-        />
+        android:contentDescription="" />
 
     <TextView
         android:layout_width="match_parent"
@@ -112,7 +112,8 @@
                 android:layout_weight="1"
                 android:src="@drawable/ic_stop_white_24dp"
                 android:id="@+id/button"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:contentDescription="" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -120,7 +121,8 @@
                 android:layout_weight="1"
                 android:src="@drawable/ic_step_backward_2_white_36dp"
                 android:id="@+id/button2"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:contentDescription="" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -128,7 +130,8 @@
                 android:layout_weight="1"
                 android:src="@drawable/ic_play_circle_outline_white_48dp"
                 android:id="@+id/button3"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:contentDescription="" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -136,14 +139,17 @@
                 android:src="@drawable/ic_step_forward_2_white_36dp"
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
-                android:id="@+id/button4"/>
+                android:id="@+id/button4"
+                android:contentDescription="" />
+
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/ic_volume_high_white_24dp"
                 android:id="@+id/button5"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:contentDescription="" />
 
         </LinearLayout>
 

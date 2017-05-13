@@ -99,7 +99,8 @@
             android:textColorHint="@android:color/white"
             android:textColor="@android:color/white"
             android:backgroundTint="@android:color/white"
-            android:inputType="textMultiLine" />
+            android:inputType="textPassword" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,12 +108,14 @@
             android:layout_gravity=""
             android:paddingTop="8dp"
             android:paddingBottom="16dp">
+
             <CheckBox
                 android:id="@+id/keepLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:buttonTint="@android:color/white"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -120,12 +123,15 @@
                 android:text="Keep me logged in"
                 android:textSize="14sp"
                 android:textColor="@android:color/white"/>
-        <Button
+
+            <Button
             android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="submit"/>
+
             </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

@@ -25,10 +25,11 @@
         android:text="Basic Information"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:drawableEnd="@drawable/ic_settings_black_24dp"
         android:textSize="16sp"
         android:textStyle="bold|italic"
-        />
+        android:drawableRight="@drawable/ic_settings_black_24dp" />
+
     <Button
         android:id="@+id/listening_settings"
         android:layout_width="match_parent"
@@ -38,10 +39,11 @@
         android:text="Listening Preferences"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:drawableEnd="@drawable/ic_settings_black_24dp"
         android:textSize="16sp"
         android:textStyle="bold|italic"
-        />
+        android:drawableRight="@drawable/ic_settings_black_24dp" />
+
     <Button
         android:id="@+id/badges_settings"
         android:layout_width="match_parent"
@@ -51,10 +53,11 @@
         android:text="Badges + Rewards"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:drawableEnd="@drawable/ic_settings_black_24dp"
         android:textSize="16sp"
         android:textStyle="bold|italic"
-        />
+        android:drawableRight="@drawable/ic_settings_black_24dp" />
+
     <Button
         android:id="@+id/additional_settings"
         android:layout_width="match_parent"
@@ -66,8 +69,8 @@
         android:layout_gravity="start"
         android:drawableRight="@drawable/ic_settings_black_24dp"
         android:textSize="16sp"
-        android:textStyle="bold|italic"
-        />
+        android:textStyle="bold|italic"/>
+
     <Button
         android:id="@+id/accounbt_settings"
         android:layout_width="match_parent"
@@ -77,8 +80,9 @@
         android:text="Account Information"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:drawableEnd="@drawable/ic_settings_black_24dp"
         android:textSize="16sp"
         android:textStyle="bold|italic"
-        />
+        android:drawableRight="@drawable/ic_settings_black_24dp" />
+
 </LinearLayout>
