@@ -1,6 +1,7 @@
 package com.example.android.musicreviewer;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -14,11 +15,11 @@ import java.util.ArrayList;
 /**
  * {@link Fragment} that displays a list of family vocabulary items.
  */
-public class UserReviewsFragment extends Fragment {
+public class UserRequestFragment extends Fragment {
 
 
 
-    public UserReviewsFragment() {
+    public UserRequestFragment() {
         // Required empty public constructor
     }
 
@@ -29,26 +30,10 @@ public class UserReviewsFragment extends Fragment {
 
         // Create a list of items
         final ArrayList<Item> items = new ArrayList<Item>();
+
         items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.ic_account_edit_black_24dp));
+                R.drawable.cd2));
+        
 
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
@@ -69,10 +54,11 @@ public class UserReviewsFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Get the {@link Item} object at the given position the user clicked on
                 Item item = items.get(position);
-                // Redirect to the correct Review
-//                New Intent
+                // Create a new intent to open the {@link ListenActivity} according to item selected
+                Intent listenIntent = new Intent(getActivity(), ListenActivity.class);
 
-
+                // Start the new activity
+                startActivity(listenIntent);
 
             }
         });

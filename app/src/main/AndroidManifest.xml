@@ -41,7 +41,14 @@
         <activity
             android:name=".AlbumsActivity"
             android:label="Albums" />
-        <activity android:name=".FindActivity"></activity>
+        <activity
+            android:name=".FindActivity"
+            android:label="Find Titles by Genre" />
+        <activity
+            android:name=".RackActivity"
+            android:label="Your Albums Rack"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ListenActivity"></activity>
     </application>
 
 </manifest>

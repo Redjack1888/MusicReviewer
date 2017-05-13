@@ -33,12 +33,14 @@
             />
 
         <TextView
+            android:id="@+id/genre_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@+id/search"
             android:layout_centerVertical="true"
             android:layout_marginRight="16dp"
             android:text="Genres"
+            android:onClick="genres"
             android:textSize="16sp"
             android:textColor="@android:color/white"
             />

@@ -25,6 +25,19 @@
     <string name="genre_previously">No More\nAvailable</string>
 
 
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="rack_give_feedback">Give\nFeedback</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="rack_listen">Start\nListening</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="rack_feedback_sent">Feedback\nSent</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="rack_not_active">Not\nActive</string>
+
+
     <string name="sub_title">Sub Label</string>
     <string name="main_title">Label</string>
 

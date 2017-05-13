@@ -1,7 +1,6 @@
 package com.example.android.musicreviewer;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,11 +12,11 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of phrases.
+ * {@link Fragment} that displays a list of number vocabulary items.
  */
-public class UserGenresFragment extends Fragment {
+public class ListenAlbumFragment extends Fragment {
 
-    public UserGenresFragment() {
+    public ListenAlbumFragment() {
         // Required empty public constructor
     }
 
@@ -28,16 +27,26 @@ public class UserGenresFragment extends Fragment {
 
         // Create a list of items
         final ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
-        items.add(new Item(R.string.sub_genres_title, R.string.genre_title));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.cd2));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
+        items.add(new Item(R.string.band_name, R.string.album_title,
+                R.drawable.nocover));
 
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
@@ -52,23 +61,18 @@ public class UserGenresFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Item} in the list.
         listView.setAdapter(adapter);
 
-        // Set a click listener when the list item is clicked on
+        // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Get the {@link Item} object at the given position the user clicked on
                 Item item = items.get(position);
-                // Create a new intent to open the {@link AlbumsActivity} according to item selected
-                Intent genreIntent = new Intent(getActivity(), GenreActivity.class);
 
-                // Start the new activity
-                startActivity(genreIntent);
 
             }
         });
 
         return rootView;
     }
-
 
 }
