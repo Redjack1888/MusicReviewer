@@ -54,8 +54,16 @@
         <activity
             android:name=".CdActivity"
             android:label="Album" />
-        <activity android:name=".RequestActivity" />
-        <activity android:name=".ReviewActivity"></activity>
+        <activity
+            android:name=".RequestActivity"
+            android:label="Request Album" />
+        <activity
+            android:name=".ReviewActivity"
+            android:label="Give Feedback"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".ReviewedActivity"
+            android:label="Feedback Sent"/>
     </application>
 
 </manifest>

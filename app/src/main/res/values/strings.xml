@@ -47,6 +47,9 @@
     <string name="sub_genres_title">and related Sub Genres </string>
     <string name="genre_title">Genre</string>
 
+    <string name="track_type_title">Remix/ Live vers./ ""/ </string>
+    <string name="track_title">Track Title</string>
+
     <string name="sub_label_title">Major/Sub-Major/Indie/</string>
     <string name="label_title">Discographic Label Name</string>
     <string name="rack_text_view_explaination">Here the user take a look to his Approved and Reviewed Albums. Start Listening: approved Album ready to listen. Give Feedback: Listened Approved Albums ready to review. Feedback Sent: Albums already reviewed by user. Not Active: Albums no more or not yet available for a user review.</string>

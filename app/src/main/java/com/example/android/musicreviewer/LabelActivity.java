@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class LabelActivity extends AppCompatActivity {
 
@@ -17,6 +19,15 @@ public class LabelActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_label);
+
+        TextView seeAllAlbums = (TextView) findViewById(R.id.see_all_text_view);
+        seeAllAlbums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent albumsIntent = new Intent (LabelActivity.this, AlbumsActivity.class);
+                startActivity(albumsIntent);
+            }
+        });
 
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager3 = (ViewPager) findViewById(R.id.viewpager3);

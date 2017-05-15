@@ -27,26 +27,16 @@ public class ListenAlbumFragment extends Fragment {
 
         // Create a list of items
         final ArrayList<Item> items = new ArrayList<Item>();
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.cd2));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
-        items.add(new Item(R.string.band_name, R.string.album_title,
-                R.drawable.nocover));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
+        items.add(new Item(R.string.track_type_title, R.string.track_title));
 
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.

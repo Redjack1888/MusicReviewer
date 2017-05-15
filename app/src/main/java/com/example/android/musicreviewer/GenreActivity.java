@@ -20,6 +20,14 @@ public class GenreActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_genre.xml layout file
         setContentView(R.layout.activity_genre);
 
+        TextView seeAllAlbums = (TextView) findViewById(R.id.see_all_text_view);
+        seeAllAlbums.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent albumsIntent = new Intent (GenreActivity.this, AlbumsActivity.class);
+                startActivity(albumsIntent);
+            }
+        });
 
 
         // Find the view pager that will allow the user to swipe between fragments
