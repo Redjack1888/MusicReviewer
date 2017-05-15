@@ -53,7 +53,7 @@ public class BrowseActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Get the {@link Item} object at the given position the user clicked on
                 Item item = items.get(position);
-                // Create a new intent to open the {@link AlbumsActivity} according to item selected
+                // Create a new intent to open the {@link LabelActivity} according to item selected
                 Intent albumIntent = new Intent(BrowseActivity.this, LabelActivity.class);
 
                 // Start the new activity

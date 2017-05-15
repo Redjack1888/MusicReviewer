@@ -59,7 +59,7 @@ public class UserLabelsFragment extends Fragment {
 
                 // Get the {@link Item} object at the given position the user clicked on
                 Item item = items.get(position);
-                // Create a new intent to open the {@link AlbumsActivity} according to item selected
+                // Create a new intent to open the {@link LabelActivity} according to item selected
                 Intent labelIntent = new Intent(getActivity(), LabelActivity.class);
 
                 // Start the new activity
