@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/darker_gray"
     android:padding="16dp"
-    android:text="Here the user can take a look to his old Review and opinions. He can Edit,share and see his review."
+    android:text="@string/reviewed_text_view_explaination"
     android:textColor="@android:color/white"
     android:textSize="16sp" />
     <LinearLayout
@@ -23,7 +23,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cd8"/>
+            android:src="@drawable/cd8"
+            android:contentDescription="@string/album_cover"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,13 +34,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="TITLE"
+                android:text="@string/album_title"
                 android:textSize="24sp"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Band or Artist"
+                android:text="@string/band_name"
                 android:textSize="24sp"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -50,19 +51,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginEnd="16dp"
-        android:gravity="right"
+        android:gravity="end"
         android:layout_marginRight="16dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Release Date:"
+            android:text="@string/release_date"
             android:textSize="16sp"
             android:textStyle="bold"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text=" XX/XX/XXXX"
+            android:text="@string/date"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
@@ -73,19 +74,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginEnd="16dp"
-        android:gravity="right"
+        android:gravity="end"
         android:layout_marginRight="16dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Archive Date:"
+            android:text="@string/archive_date"
             android:textSize="16sp"
             android:textStyle="bold"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text=" XX/XX/XXXX"
+            android:text="@string/date"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
@@ -104,7 +105,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reviewer Opinions"
+            android:text="@string/reviewer_opinions"
             android:textSize="24sp"
             android:textColor="@android:color/white"
             android:layout_margin="8dp"
@@ -112,7 +113,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your opinions mean a lot. Thanks for sending."
+            android:text="@string/your_opinions_mean_a_lot_thanks_for_sending"
             android:gravity="center_horizontal"
             android:textSize="16sp"
             android:textColor="@android:color/white"
@@ -122,7 +123,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edit"
+            android:text="@string/edit"
             android:textColor="@android:color/white"
             android:gravity="end"
             android:textSize="24sp"
@@ -143,7 +144,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Review this book"
+            android:text="@string/review_this_album"
             android:textSize="24sp"
             android:textColor="@android:color/white"
             android:layout_margin="8dp"
@@ -151,16 +152,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Saved! Share your review with your friends!"
+            android:text="@string/saved_share"
             android:gravity="center_horizontal"
             android:textSize="16sp"
             android:textColor="@android:color/white"
             android:layout_marginTop="8dp"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -172,7 +170,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Share on Facebook"
+                    android:text="@string/share_on_facebook"
                     android:textSize="18sp"
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
@@ -184,7 +182,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Share on Twitter"
+                    android:text="@string/share_on_twitter"
                     android:textSize="18sp"
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
@@ -196,19 +194,18 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Share on Google+"
+                    android:text="@string/share_on_google"
                     android:textSize="18sp"
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
                     android:drawableTop="@drawable/googleplus2"
                     android:background="@android:color/transparent"/>
 
-            </LinearLayout>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="See Your Review"
+            android:text="@string/see_your_review"
             android:textColor="@android:color/white"
             android:gravity="center_horizontal"
             android:textSize="24sp"
@@ -217,7 +214,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edit"
+            android:text="@string/edit"
             android:textColor="@android:color/white"
             android:gravity="end"
             android:textSize="24sp"

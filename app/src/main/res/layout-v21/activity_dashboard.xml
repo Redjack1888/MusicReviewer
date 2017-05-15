@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/black"
-                android:hint="Search by Titles or Bands"
+                android:hint="@string/search_by_titles_or_bands"
                 android:padding="16dp" />
 
             <ImageView
@@ -65,7 +65,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
                 android:scaleType="center"
-                android:contentDescription="search icon"
+                android:contentDescription="@string/search_icon"
                 android:src="@drawable/ic_magnify_black_24dp" />
 
         </LinearLayout>

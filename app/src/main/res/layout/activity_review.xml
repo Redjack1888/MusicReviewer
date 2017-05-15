@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Reviewer Opinions"
+        android:text="@string/reviewer_opinions"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:text="Would you recommend this Album?"
+        android:text="@string/recommend_this_album"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
 
@@ -63,7 +63,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Are you interested in connecting with this Band (interviews, events, etc)?"
+            android:text="@string/interviews_events_etc"
             android:textSize="16sp"
             android:textStyle="italic" />
 
@@ -94,7 +94,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Would you purchase this Album for yourself or a friend?"
+            android:text="@string/purchase_this_album"
             android:textSize="16sp"
             android:textStyle="italic" />
 
@@ -116,7 +116,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Notes for the Label?"
+        android:text="@string/notes_for_the_label"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
 
@@ -126,14 +126,14 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:hint="Share a private note about the Album with the Label (but contact support for any file issues you are experiencing). Add your review in the section below."
+        android:hint="@string/share_a_private_note_hint"
         android:inputType="textMultiLine" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Opinions"
+        android:text="@string/send_opinions"
         android:textSize="16sp"
         android:textStyle="bold"
         android:layout_margin="16dp"/>
@@ -143,7 +143,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Review this Album"
+        android:text="@string/review_this_album"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -154,14 +154,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:ems="10"
-        android:hint="Your review may be featured on this Album's MusicReviewer page! (Having trouble opening a file? Contact support instead.)"
+        android:hint="@string/your_review_hint"
         android:inputType="textMultiLine" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add link(s)"
+        android:text="@string/add_link_s"
         android:textStyle="bold"
         android:textSize="16sp"
         android:padding="16dp"/>
@@ -172,13 +172,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:text="If you posted your review online, please add the link (or links) here." />
+        android:text="@string/link_or_links_here" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Review"
+        android:text="@string/send_review"
         android:textSize="16sp"
         android:textStyle="bold"
         android:layout_margin="16dp"/>

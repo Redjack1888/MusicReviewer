@@ -113,7 +113,7 @@
             android:layout_gravity="end"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="go to user rack"
+            android:text="@string/go_to_user_rack"
             android:textAlignment="textEnd"
             android:textSize="16sp"
             android:textStyle="bold|italic" />
