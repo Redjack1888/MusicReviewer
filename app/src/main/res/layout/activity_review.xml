@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:text="Would you recommend this Book?"
+        android:text="Would you recommend this Album?"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
 
@@ -63,7 +63,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Are you interested in connecting with this author (interviews, events, etc)?"
+            android:text="Are you interested in connecting with this Band (interviews, events, etc)?"
             android:textSize="16sp"
             android:textStyle="italic" />
 
@@ -94,7 +94,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:text="Would you purchase this book for yourself or a friend?"
+            android:text="Would you purchase this Album for yourself or a friend?"
             android:textSize="16sp"
             android:textStyle="italic" />
 
@@ -116,7 +116,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Notes for the publisher?"
+        android:text="Notes for the Label?"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
 
@@ -126,7 +126,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:hint="Share a private note about the book with the publisher (but contact support for any file issues you are experiencing). Add your review in the section below."
+        android:hint="Share a private note about the Album with the Label (but contact support for any file issues you are experiencing). Add your review in the section below."
         android:inputType="textMultiLine" />
 
     <Button
@@ -143,7 +143,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Review this book"
+        android:text="Review this Album"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -154,7 +154,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:ems="10"
-        android:hint="Your review may be featured on this book's NetGalley page! (Having trouble opening a file? Contact support instead.)"
+        android:hint="Your review may be featured on this Album's MusicReviewer page! (Having trouble opening a file? Contact support instead.)"
         android:inputType="textMultiLine" />
 
     <TextView
