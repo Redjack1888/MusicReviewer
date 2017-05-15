@@ -49,17 +49,29 @@ public class ListenActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
 
+            case R.id.dashboard_menu:
+                Intent dashboardIntent = new Intent(ListenActivity.this, DashboardActivity.class);
+                startActivity(dashboardIntent);
+                return true;
             case R.id.rack_menu:
                 Intent rackIntent = new Intent(ListenActivity.this, RackActivity.class);
                 startActivity(rackIntent);
                 return true;
             case R.id.title_menu:
-                Intent genresIntent = new Intent(ListenActivity.this, GenreActivity.class);
-                startActivity(genresIntent);
+                Intent findIntent = new Intent(ListenActivity.this, FindActivity.class);
+                startActivity(findIntent);
                 return true;
             case R.id.label_menu:
+                Intent labelIntent = new Intent(ListenActivity.this, BrowseActivity.class);
+                startActivity(labelIntent);
+                return true;
+            case R.id.profile_menu:
+                Intent profileIntent = new Intent (ListenActivity.this, ProfileActivity.class);
+                startActivity(profileIntent);
                 return true;
             case R.id.logout_menu:
+                Intent logoutIntent = new Intent(ListenActivity.this, LoginActivity.class);
+                startActivity(logoutIntent);
                 return true;
             case R.id.setting_menu:
                 Intent settingsIntent = new Intent(ListenActivity.this, SettingsActivity.class);

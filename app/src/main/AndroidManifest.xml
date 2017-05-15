@@ -48,7 +48,14 @@
             android:name=".RackActivity"
             android:label="Your Albums Rack"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".ListenActivity"></activity>
+        <activity
+            android:name=".ListenActivity"
+            android:label="Listening" />
+        <activity
+            android:name=".CdActivity"
+            android:label="Album" />
+        <activity android:name=".RequestActivity" />
+        <activity android:name=".ReviewActivity"></activity>
     </application>
 
 </manifest>

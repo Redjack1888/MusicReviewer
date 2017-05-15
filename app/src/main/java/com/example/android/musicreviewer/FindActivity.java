@@ -75,15 +75,25 @@ public class FindActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
 
-            case R.id.rack_menu:
-//                Intent rackIntent = new Intent(ProfileActivity.this, RackActivity.class);
-//                startActivity(rackIntent);
+            case R.id.dashboard_menu:
+                Intent dashboardIntent = new Intent(FindActivity.this, DashboardActivity.class);
+                startActivity(dashboardIntent);
                 return true;
-            case R.id.title_menu:
+            case R.id.rack_menu:
+                Intent rackIntent = new Intent(FindActivity.this, RackActivity.class);
+                startActivity(rackIntent);
                 return true;
             case R.id.label_menu:
+                Intent labelIntent = new Intent(FindActivity.this, BrowseActivity.class);
+                startActivity(labelIntent);
+                return true;
+            case R.id.profile_menu:
+                Intent profileIntent = new Intent (FindActivity.this, ProfileActivity.class);
+                startActivity(profileIntent);
                 return true;
             case R.id.logout_menu:
+                Intent logoutIntent = new Intent(FindActivity.this, LoginActivity.class);
+                startActivity(logoutIntent);
                 return true;
             case R.id.setting_menu:
                 Intent settingsIntent = new Intent(FindActivity.this, SettingsActivity.class);

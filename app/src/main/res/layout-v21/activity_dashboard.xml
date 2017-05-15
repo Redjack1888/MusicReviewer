@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -11,7 +10,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:padding="16dp"
-            android:text="Here the user can take a look to the activities he can perform according to his settings and App Music Database updates. He can see New Albums recently added or take a look to the new ones according to his preferred genres, labels or band. On this Activity he can see also his last requested albums..."
+            android:text="@string/dashboard_text_view_explaination"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
 
@@ -25,7 +24,7 @@
                 android:id="@+id/username_dashboard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username"
+                android:text="@string/username"
                 android:layout_centerVertical="true"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
@@ -37,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:text="Reviewer"
+                android:text="@string/reviewer"
                 android:gravity="center_vertical"
                 android:drawableStart="@drawable/ic_trophy_white_24dp"
                 android:drawablePadding="16dp"

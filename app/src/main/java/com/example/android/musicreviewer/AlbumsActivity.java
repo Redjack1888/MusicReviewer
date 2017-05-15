@@ -85,15 +85,29 @@ public class AlbumsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
 
+            case R.id.dashboard_menu:
+                Intent dashboardIntent = new Intent(AlbumsActivity.this, DashboardActivity.class);
+                startActivity(dashboardIntent);
+                return true;
             case R.id.rack_menu:
-//                Intent rackIntent = new Intent(ProfileActivity.this, RackActivity.class);
-//                startActivity(rackIntent);
+                Intent rackIntent = new Intent(AlbumsActivity.this, RackActivity.class);
+                startActivity(rackIntent);
                 return true;
             case R.id.title_menu:
+                Intent findIntent = new Intent(AlbumsActivity.this, FindActivity.class);
+                startActivity(findIntent);
                 return true;
             case R.id.label_menu:
+                Intent labelIntent = new Intent(AlbumsActivity.this, BrowseActivity.class);
+                startActivity(labelIntent);
+                return true;
+            case R.id.profile_menu:
+                Intent profileIntent = new Intent (AlbumsActivity.this, ProfileActivity.class);
+                startActivity(profileIntent);
                 return true;
             case R.id.logout_menu:
+                Intent logoutIntent = new Intent(AlbumsActivity.this, LoginActivity.class);
+                startActivity(logoutIntent);
                 return true;
             case R.id.setting_menu:
                 Intent settingsIntent = new Intent(AlbumsActivity.this, SettingsActivity.class);

@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@android:color/transparent"
-        android:text="Basic Information"
+        android:text="@string/basic_information"
         android:textAlignment="textStart"
         android:layout_gravity="start"
         android:drawableEnd="@drawable/ic_settings_black_24dp"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@android:color/transparent"
-        android:text="Listening Preferences"
+        android:text="@string/listening_preferences"
         android:textAlignment="textStart"
         android:layout_gravity="start"
         android:drawableEnd="@drawable/ic_settings_black_24dp"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@android:color/transparent"
-        android:text="Badges + Rewards"
+        android:text="@string/badges_rewards"
         android:textAlignment="textStart"
         android:layout_gravity="start"
         android:drawableEnd="@drawable/ic_settings_black_24dp"
@@ -64,12 +64,13 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@android:color/transparent"
-        android:text="Additional info"
+        android:text="@string/additional_info"
         android:textAlignment="textStart"
         android:layout_gravity="start"
-        android:drawableRight="@drawable/ic_settings_black_24dp"
+        android:drawableEnd="@drawable/ic_settings_black_24dp"
         android:textSize="16sp"
-        android:textStyle="bold|italic"/>
+        android:textStyle="bold|italic"
+        android:drawableRight="@drawable/ic_settings_black_24dp" />
 
     <Button
         android:id="@+id/accounbt_settings"
@@ -77,12 +78,30 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@android:color/transparent"
-        android:text="Account Information"
+        android:text="@string/account_information"
         android:textAlignment="textStart"
         android:layout_gravity="start"
         android:drawableEnd="@drawable/ic_settings_black_24dp"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         android:drawableRight="@drawable/ic_settings_black_24dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/black" />
+
+    <Button
+        android:id="@+id/go_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@android:color/transparent"
+        android:text="@string/go_to_profile"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="16dp" />
 
 </LinearLayout>

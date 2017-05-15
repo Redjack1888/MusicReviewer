@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -13,6 +15,15 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        Button profile = (Button)findViewById(R.id.go_profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profileIntent = new Intent(SettingsActivity.this, ProfileActivity.class);
+                startActivity(profileIntent);
+            }
+        });
 
     }
 
@@ -33,22 +44,24 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(dashboardIntent);
                 return true;
             case R.id.rack_menu:
-//                Intent rackIntent = new Intent(ProfileActivity.this, RackActivity.class);
-//                startActivity(rackIntent);
+                Intent rackIntent = new Intent(SettingsActivity.this, RackActivity.class);
+                startActivity(rackIntent);
                 return true;
             case R.id.title_menu:
-                Intent genresIntent = new Intent(SettingsActivity.this, GenreActivity.class);
-                startActivity(genresIntent);
+                Intent findIntent = new Intent(SettingsActivity.this, FindActivity.class);
+                startActivity(findIntent);
                 return true;
             case R.id.label_menu:
+                Intent labelIntent = new Intent(SettingsActivity.this, BrowseActivity.class);
+                startActivity(labelIntent);
                 return true;
             case R.id.profile_menu:
-                Intent profileIntent = new Intent(SettingsActivity.this, ProfileActivity.class);
+                Intent profileIntent = new Intent (SettingsActivity.this, ProfileActivity.class);
                 startActivity(profileIntent);
                 return true;
             case R.id.logout_menu:
-                return true;
-            case R.id.setting_menu:
+                Intent logoutIntent = new Intent(SettingsActivity.this, LoginActivity.class);
+                startActivity(logoutIntent);
                 return true;
             case R.id.help_menu:
                 return true;

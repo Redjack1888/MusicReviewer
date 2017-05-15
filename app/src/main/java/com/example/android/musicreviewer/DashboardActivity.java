@@ -62,7 +62,13 @@ public class DashboardActivity extends AppCompatActivity {
                 Intent browseIntent = new Intent(DashboardActivity.this, BrowseActivity.class);
                 startActivity(browseIntent);
                 return true;
+            case R.id.profile_menu:
+                Intent profileIntent = new Intent (DashboardActivity.this, ProfileActivity.class);
+                startActivity(profileIntent);
+                return true;
             case R.id.logout_menu:
+                Intent logoutIntent = new Intent(DashboardActivity.this, LoginActivity.class);
+                startActivity(logoutIntent);
                 return true;
             case R.id.setting_menu:
                 Intent settingsIntent = new Intent(DashboardActivity.this, SettingsActivity.class);

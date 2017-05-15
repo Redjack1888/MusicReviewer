@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -10,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
         android:padding="16dp"
-        android:text="Here the user can take a look to the activities he can perform according to his settings and App Music Database updates. He can see New Albums recently added or take a look to the new ones according to his preferred genres, labels or band. On this Activity he can see also his last requested albums..."
+        android:text="@string/rack_text_view_explaination"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
 
@@ -25,8 +26,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/black"
-            android:hint="Search by Titles or Bands"
-            android:padding="16dp" />
+            android:hint="@string/search_by_titles_or_bands"
+            android:padding="16dp"
+            tools:targetApi="lollipop" />
 
         <ImageView
             android:id="@+id/search_title"
@@ -35,7 +37,7 @@
             android:layout_gravity="end"
             android:scaleType="center"
             android:src="@drawable/ic_magnify_black_24dp"
-            android:contentDescription="" />
+            android:contentDescription="@string/search_icon" />
 
     </LinearLayout>
 

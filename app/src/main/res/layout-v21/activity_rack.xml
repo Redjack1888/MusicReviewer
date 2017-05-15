@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
         android:padding="16dp"
-        android:text="Here the user can take a look to the activities he can perform according to his settings and App Music Database updates. He can see New Albums recently added or take a look to the new ones according to his preferred genres, labels or band. On this Activity he can see also his last requested albums..."
+        android:text="@string/rack_text_view_explaination"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
 
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/black"
-            android:hint="Search by Titles or Bands"
+            android:hint="@string/search_by_titles_or_bands"
             android:padding="16dp" />
 
         <ImageView
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="end"
-            android:contentDescription=""
+            android:contentDescription="@string/search_icon"
             android:scaleType="center"
             android:src="@drawable/ic_magnify_black_24dp" />
 

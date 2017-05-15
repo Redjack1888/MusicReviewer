@@ -50,17 +50,29 @@ public class LabelActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
 
+            case R.id.dashboard_menu:
+                Intent dashboardIntent = new Intent(LabelActivity.this, DashboardActivity.class);
+                startActivity(dashboardIntent);
+                return true;
             case R.id.rack_menu:
-//                Intent rackIntent = new Intent(ProfileActivity.this, RackActivity.class);
-//                startActivity(rackIntent);
+                Intent rackIntent = new Intent(LabelActivity.this, RackActivity.class);
+                startActivity(rackIntent);
                 return true;
             case R.id.title_menu:
-                Intent genresIntent = new Intent(LabelActivity.this, LabelActivity.class);
-                startActivity(genresIntent);
+                Intent findIntent = new Intent(LabelActivity.this, FindActivity.class);
+                startActivity(findIntent);
                 return true;
             case R.id.label_menu:
+                Intent labelIntent = new Intent(LabelActivity.this, BrowseActivity.class);
+                startActivity(labelIntent);
+                return true;
+            case R.id.profile_menu:
+                Intent profileIntent = new Intent (LabelActivity.this, ProfileActivity.class);
+                startActivity(profileIntent);
                 return true;
             case R.id.logout_menu:
+                Intent logoutIntent = new Intent(LabelActivity.this, LoginActivity.class);
+                startActivity(logoutIntent);
                 return true;
             case R.id.setting_menu:
                 Intent settingsIntent = new Intent(LabelActivity.this, SettingsActivity.class);

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
@@ -12,12 +13,12 @@
         android:padding="16dp"
         android:background="@android:color/darker_gray"
     android:textColor="@android:color/white"
-        android:text="From here user can login into the App. That could requires the use of Social Networks Authentication API and an user Database to verify users credentials"/>
+        android:text="@string/login_text_view_explaination"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login with Socials"
+        android:text="@string/login_with_socials"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:textAlignment="center"
@@ -35,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Facebook"
+            android:text="@string/facebook"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:textAlignment="center"
@@ -47,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Twitter"
+            android:text="@string/twitter"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:textAlignment="center"
@@ -59,7 +60,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Google+"
+            android:text="@string/googleplus"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:textAlignment="center"
@@ -76,7 +77,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login with E-Mail"
+            android:text="@string/login_with_mail"
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:textAlignment="center"
@@ -85,21 +86,23 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username or E-mail"
+            android:hint="@string/username_mail"
             android:textColorHint="@android:color/white"
             android:textColor="@android:color/white"
             android:backgroundTint="@android:color/white"
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            tools:targetApi="lollipop" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="password"
+            android:hint="@string/password"
             android:textColorHint="@android:color/white"
             android:textColor="@android:color/white"
             android:backgroundTint="@android:color/white"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:targetApi="lollipop" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,22 +116,20 @@
                 android:id="@+id/keepLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:buttonTint="@android:color/white"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="60dp"
-                android:text="Keep me logged in"
-                android:textSize="14sp"
-                android:textColor="@android:color/white"/>
+                android:buttonTint="@android:color/white"
+                android:paddingStart="8dp"
+                android:paddingEnd="16dp"
+                android:text="@string/keep_me_logged_in"
+                android:textColor="@android:color/white"
+                tools:targetApi="lollipop"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp" />
 
             <Button
             android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="submit"/>
+            android:text="@string/submit"/>
 
             </LinearLayout>
 
@@ -152,7 +153,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="or CREATE AN ACCOUNT"
+                android:text="@string/create_an_account"
                 android:textStyle="italic"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"/>
@@ -161,7 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Sign Up"
+                android:text="@string/sign_up"
                 android:onClick=""
                 android:textColor="@android:color/holo_red_light"
                 android:textAllCaps="true"

@@ -9,32 +9,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class ProfileActivity extends AppCompatActivity {
+public class CdActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_album);
 
-        Button settings = (Button)findViewById(R.id.settings);
-        settings.setOnClickListener(new View.OnClickListener() {
+        Button request = (Button) findViewById(R.id.request_button);
+        request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent settingsIntent = new Intent(ProfileActivity.this, SettingsActivity.class);
-                startActivity(settingsIntent);
-            }
-        });
-
-        Button dashboard = (Button) findViewById(R.id.go_dashboard);
-        dashboard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent dashboardIntent = new Intent(ProfileActivity.this, DashboardActivity.class);
-                startActivity(dashboardIntent);
+                Intent requestIntent = new Intent(CdActivity.this, RequestActivity.class);
+                startActivity(requestIntent);
             }
         });
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -47,27 +37,30 @@ public class ProfileActivity extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.dashboard_menu:
-                Intent dashboardIntent = new Intent(ProfileActivity.this, DashboardActivity.class);
+                Intent dashboardIntent = new Intent(CdActivity.this, DashboardActivity.class);
                 startActivity(dashboardIntent);
-                return true;
             case R.id.rack_menu:
-                Intent rackIntent = new Intent(ProfileActivity.this, RackActivity.class);
+                Intent rackIntent = new Intent(CdActivity.this, RackActivity.class);
                 startActivity(rackIntent);
                 return true;
             case R.id.title_menu:
-                Intent findIntent = new Intent(ProfileActivity.this, FindActivity.class);
+                Intent findIntent = new Intent(CdActivity.this, FindActivity.class);
                 startActivity(findIntent);
                 return true;
             case R.id.label_menu:
-                Intent labelIntent = new Intent(ProfileActivity.this, BrowseActivity.class);
+                Intent labelIntent = new Intent(CdActivity.this, BrowseActivity.class);
                 startActivity(labelIntent);
                 return true;
+            case R.id.profile_menu:
+                Intent profileIntent = new Intent(CdActivity.this, ProfileActivity.class);
+                startActivity(profileIntent);
+                return true;
             case R.id.logout_menu:
-                Intent logoutIntent = new Intent(ProfileActivity.this, LoginActivity.class);
+                Intent logoutIntent = new Intent(CdActivity.this, LoginActivity.class);
                 startActivity(logoutIntent);
                 return true;
             case R.id.setting_menu:
-                Intent settingsIntent = new Intent(ProfileActivity.this, SettingsActivity.class);
+                Intent settingsIntent = new Intent(CdActivity.this, SettingsActivity.class);
                 startActivity(settingsIntent);
                 return true;
             case R.id.help_menu:

@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
         android:padding="16dp"
-        android:text="Here all user informations and account settings can be edited and stored."
+        android:text="@string/profile_text_view_explaination"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
 
@@ -23,7 +23,7 @@
             android:id="@+id/user_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription=""
+            android:contentDescription="@string/user_image"
             android:src="@drawable/user" />
 
         <LinearLayout
@@ -38,9 +38,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
-                android:paddingStart="16dp"
-                android:text="Welcome"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/welcome"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -48,9 +48,9 @@
                 android:id="@+id/profile_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:text="username"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/username"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -66,9 +66,9 @@
             android:layout_gravity="end"
             android:layout_toEndOf="@id/user_image"
             android:layout_toRightOf="@id/user_image"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:text="my-email@gmail.com"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/email_address"
             android:textAlignment="viewEnd"
             android:textStyle="italic" />
 
@@ -87,9 +87,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:text="Level:"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/level"
                 android:textStyle="bold" />
 
             <TextView
@@ -97,9 +97,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:text="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/level_number"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -120,9 +120,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:text="Total Points:"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/total_points"
                 android:textStyle="bold" />
 
             <TextView
@@ -130,9 +130,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:text="245"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/points_number"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -148,9 +148,9 @@
             android:drawableLeft="@drawable/flag_it"
             android:drawablePadding="8dp"
             android:drawableStart="@drawable/flag_it"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:text="Member Since 2017"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/member_since_2017"
             android:textStyle="italic" />
     </RelativeLayout>
 
@@ -162,15 +162,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:text="Reviewer at:"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/reviewer_at"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Redjack (http://red-jack.blogspot.com/)" />
+            android:text="@string/reviewer_where" />
 
     </LinearLayout>
 
@@ -182,15 +182,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:text="Type of reviewer:"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/type_of_reviewer"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Consumer Reviewer" />
+            android:text="@string/reviewer_type" />
 
     </LinearLayout>
 
@@ -205,7 +205,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Feedback Ratio:"
+            android:text="@string/feedback_ratio"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -214,7 +214,7 @@
             android:id="@+id/ratio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" 50%"
+            android:text="@string/ratio_feedback"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -226,7 +226,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Bio"
+        android:text="@string/bio"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -236,7 +236,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisi, tempus eu lacinia facilisis, laoreet ut lorem. Curabitur nulla est, tincidunt ac quam quis, tincidunt aliquam dui. Proin ut dui massa. Vivamus vel nulla nec mauris interdum condimentum egestas ut purus. Phasellus scelerisque augue a egestas ultricies." />
+        android:text="@string/bio_text" />
 
     <View
         android:layout_width="match_parent"
@@ -258,7 +258,7 @@
             android:layout_gravity="start"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="Go to Dashboard"
+            android:text="@string/go_to_dashboard"
             android:textAlignment="textStart"
             android:textSize="16sp"
             android:textStyle="bold|italic" />
@@ -270,7 +270,7 @@
             android:layout_gravity="end"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:text="Go to SETTINGS"
+            android:text="@string/go_to_settings"
             android:textAlignment="textEnd"
             android:textSize="16sp"
             android:textStyle="bold|italic" />
