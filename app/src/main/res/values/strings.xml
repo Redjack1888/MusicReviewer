@@ -153,4 +153,5 @@
     <string name="share_on_twitter">Share on Twitter</string>
     <string name="share_on_google">Share on Google+</string>
     <string name="see_your_review">See Your Review</string>
+    <string name="user_rate_and_write">From this Activity the User can rate and write a review about the Album he listened.</string>
 </resources>

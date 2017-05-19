@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
         android:padding="16dp"
-        android:text=""
+        android:text="@string/user_rate_and_write"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
 
