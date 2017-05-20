@@ -155,4 +155,6 @@
     <string name="see_your_review">See Your Review</string>
     <string name="user_rate_and_write">From this Activity the User can rate and write a review about the Album he listened.</string>
     <string name="playing_song_title">Playing Song Title</string>
+    <string name="arrow_icon">arrow icon</string>
+    <string name="settingstext_view_explaination">From here user can change personal profile informations, choose preferred music genres and devices in use, take a look on Badges and Rewards earned for his activities on the App and share them with friends on social networks, add details as contact info, birthday and more. He can then change password, mail account or completely delete the account.</string>
 </resources>

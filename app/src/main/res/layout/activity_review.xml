@@ -14,28 +14,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         android:text="@string/user_rate_and_write"
         android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="@dimen/font_16" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/padding_margin_1"
         android:text="@string/reviewer_opinions"
-        android:textSize="24sp"
+        android:textSize="@dimen/font_24"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/padding_margin_1"
+        android:layout_marginStart="@dimen/padding_margin_1"
         android:text="@string/recommend_this_album"
-        android:textSize="20sp"
+        android:textSize="@dimen/font_20"
         android:textStyle="bold|italic" />
 
     <RatingBar
@@ -60,11 +60,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginEnd="@dimen/padding_margin_1"
+            android:layout_marginStart="@dimen/padding_margin_1"
             android:layout_weight="1"
             android:text="@string/interviews_events_etc"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="italic" />
 
         <Switch
@@ -72,8 +72,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginEnd="@dimen/padding_margin_1"
+            android:layout_marginRight="@dimen/padding_margin_1"
             android:textOff="@android:string/no"
             android:textOn="@android:string/yes" />
 
@@ -83,7 +83,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/padding_margin_1"
         android:orientation="horizontal">
 
         <TextView
@@ -91,11 +91,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginEnd="@dimen/padding_margin_1"
+            android:layout_marginStart="@dimen/padding_margin_1"
             android:layout_weight="1"
             android:text="@string/purchase_this_album"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="italic" />
 
         <Switch
@@ -103,8 +103,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginEnd="@dimen/padding_margin_1"
+            android:layout_marginRight="@dimen/padding_margin_1"
             android:textOff="@android:string/no"
             android:textOn="@android:string/yes"/>
 
@@ -115,17 +115,17 @@
         android:id="@+id/textView16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         android:text="@string/notes_for_the_label"
-        android:textSize="20sp"
+        android:textSize="@dimen/font_20"
         android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/padding_margin_1"
+        android:layout_marginStart="@dimen/padding_margin_1"
         android:hint="@string/share_a_private_note_hint"
         android:inputType="textMultiLine" />
 
@@ -134,25 +134,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/send_opinions"
-        android:textSize="16sp"
+        android:textSize="@dimen/font_16"
         android:textStyle="bold"
-        android:layout_margin="16dp"/>
+        android:layout_margin="@dimen/padding_margin_1"/>
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/padding_margin_1"
         android:text="@string/review_this_album"
-        android:textSize="24sp"
+        android:textSize="@dimen/font_24"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/padding_margin_1"
+        android:layout_marginStart="@dimen/padding_margin_1"
         android:ems="10"
         android:hint="@string/your_review_hint"
         android:inputType="textMultiLine" />
@@ -163,15 +163,15 @@
         android:layout_height="wrap_content"
         android:text="@string/add_link_s"
         android:textStyle="bold"
-        android:textSize="16sp"
-        android:padding="16dp"/>
+        android:textSize="@dimen/font_16"
+        android:padding="@dimen/padding_margin_1"/>
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/padding_margin_1"
+        android:layout_marginStart="@dimen/padding_margin_1"
         android:text="@string/link_or_links_here" />
 
     <Button
@@ -179,8 +179,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/send_review"
-        android:textSize="16sp"
+        android:textSize="@dimen/font_16"
         android:textStyle="bold"
-        android:layout_margin="16dp"/>
+        android:layout_margin="@dimen/padding_margin_1"/>
     </LinearLayout>
 </ScrollView>

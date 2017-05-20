@@ -10,9 +10,9 @@
         android:layout_height="wrap_content"
         android:text="@string/request_text_view_explainationy_e_mail_to_the_user"
         android:background="@android:color/darker_gray"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="@dimen/font_16"
         />
 
     <TextView
@@ -20,8 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/what_appeals"
-        android:padding="16dp"
-        android:textSize="24sp"
+        android:padding="@dimen/padding_margin_1"
+        android:textSize="@dimen/font_24"
         android:textStyle="bold|italic"
         android:textColor="@android:color/black"/>
 
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="@dimen/padding_margin_1">
 
         <CheckBox
             android:id="@+id/checkBox2"
@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         >
 
         <CheckBox
@@ -77,22 +77,22 @@
         android:text="@string/send_request"
         tools:text="Send Request"
         android:textStyle="bold"
-        android:textSize="24sp"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:layout_margin="16dp"/>
+        android:textSize="@dimen/font_24"
+        android:paddingTop="@dimen/padding_margin_1"
+        android:paddingBottom="@dimen/padding_margin_1"
+        android:layout_margin="@dimen/padding_margin_1"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/padding_margin_1"
         android:background="@android:color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
+        android:paddingLeft="@dimen/padding_margin_1"
+        android:paddingRight="@dimen/padding_margin_1">
 
         <Button
             android:id="@+id/go_dashboard2"
@@ -103,7 +103,7 @@
             android:background="@android:color/transparent"
             android:text="@string/go_to_dashboard"
             android:textAlignment="textStart"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="bold|italic" />
 
         <Button
@@ -115,7 +115,7 @@
             android:background="@android:color/transparent"
             android:text="@string/go_to_user_rack"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="bold|italic" />
 
     </LinearLayout>

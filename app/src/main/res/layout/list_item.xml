@@ -11,7 +11,7 @@
         android:id="@+id/image"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
-        android:contentDescription="" />
+        android:contentDescription="@string/album_cover" />
 
     <LinearLayout
         android:id="@+id/text_container"
@@ -22,10 +22,10 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/image"
         android:orientation="vertical"
-        android:paddingStart="16dp"
+        android:paddingStart="@dimen/padding_margin_1"
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@id/image"
-        android:paddingLeft="16dp">
+        android:paddingLeft="@dimen/padding_margin_1">
 
         <TextView
             android:id="@+id/item_text_view"
@@ -54,9 +54,9 @@
         android:layout_height="24dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="@dimen/padding_margin_1"
         android:src="@drawable/ic_arrow_right_bold_black_24dp"
-        android:contentDescription=""
+        android:contentDescription="@string/arrow_icon"
         android:layout_alignParentRight="true"
         android:layout_marginRight="16dp" />
 

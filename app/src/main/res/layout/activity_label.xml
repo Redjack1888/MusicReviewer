@@ -9,15 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         android:text="@string/label_text_view_explaination"
         android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="@dimen/font_16" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         android:background="@android:color/black">
 
         <TextView
@@ -27,7 +27,7 @@
             android:text="@string/label_name"
             android:layout_centerVertical="true"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="@dimen/font_24"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true" />
 
@@ -36,12 +36,12 @@
             android:layout_height="wrap_content"
             android:layout_toStartOf="@+id/search"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/padding_margin_1"
             android:text="@string/label"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textColor="@android:color/white"
             android:layout_toLeftOf="@+id/search"
-            android:layout_marginRight="16dp" />
+            android:layout_marginRight="@dimen/padding_margin_1" />
 
 
         <ImageView
@@ -50,11 +50,11 @@
             android:layout_height="wrap_content"
             android:layout_toStartOf="@+id/like_genre"
             android:gravity="center_vertical"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/padding_margin_1"
             android:src="@drawable/ic_magnify_white_24dp"
             android:contentDescription="@string/search_icon"
             android:layout_toLeftOf="@+id/like_genre"
-            android:layout_marginRight="16dp" />
+            android:layout_marginRight="@dimen/padding_margin_1" />
         <ImageView
             android:id="@id/like_genre"
             android:layout_width="wrap_content"
@@ -71,8 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
+        android:layout_marginLeft="@dimen/padding_margin_1"
+        android:layout_marginRight="@dimen/padding_margin_1">
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs3"
@@ -84,8 +84,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:paddingTop="@dimen/padding_margin_2"
+            android:paddingBottom="@dimen/padding_margin_2"
             android:background="@android:color/white">
 
             <android.support.v7.widget.AppCompatTextView
@@ -94,18 +94,18 @@
                 android:layout_weight="1"
                 android:textAlignment="textEnd"
                 android:layout_gravity="end"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/padding_margin_2"
                 android:text="@string/number"
-                android:layout_marginRight="8dp" />
+                android:layout_marginRight="@dimen/padding_margin_2" />
 
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:layout_gravity="end"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/padding_margin_2"
                 android:text="@string/total"
-                android:layout_marginRight="8dp" />
+                android:layout_marginRight="@dimen/padding_margin_2" />
 
             <View
                 android:layout_width="1dp"
@@ -118,10 +118,10 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
                 android:layout_gravity="end"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="@dimen/padding_margin_2"
                 android:text="@string/see_all"
                 android:textColor="@android:color/holo_red_dark"
-                android:layout_marginLeft="8dp" />
+                android:layout_marginLeft="@dimen/padding_margin_2" />
 
         </LinearLayout>
 

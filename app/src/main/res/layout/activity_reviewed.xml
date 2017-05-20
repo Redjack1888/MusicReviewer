@@ -7,127 +7,135 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/darker_gray"
-    android:padding="16dp"
+    android:padding="@dimen/padding_margin_1"
     android:text="@string/reviewed_text_view_explaination"
     android:textColor="@android:color/white"
-    android:textSize="16sp" />
+    android:textSize="@dimen/font_16" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="@dimen/padding_margin_1">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/cd8"
             android:contentDescription="@string/album_cover"/>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp">
+            android:layout_marginStart="@dimen/padding_margin_1"
+            android:layout_marginLeft="@dimen/padding_margin_1">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/album_title"
-                android:textSize="24sp"
+                android:textSize="@dimen/font_24"
                 android:textStyle="bold"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/band_name"
-                android:textSize="24sp"
+                android:textSize="@dimen/font_24"
                 android:textStyle="bold"/>
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="@dimen/padding_margin_1"
         android:gravity="end"
-        android:layout_marginRight="16dp">
+        android:layout_marginRight="@dimen/padding_margin_1">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/release_date"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="bold"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/date"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="bold"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp" />
+            android:layout_marginStart="@dimen/padding_margin_2"
+            android:layout_marginLeft="@dimen/padding_margin_2" />
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="@dimen/padding_margin_1"
         android:gravity="end"
-        android:layout_marginRight="16dp">
+        android:layout_marginRight="@dimen/padding_margin_1">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/archive_date"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="bold"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/date"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textStyle="bold"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp" />
+            android:layout_marginStart="@dimen/padding_margin_2"
+            android:layout_marginLeft="@dimen/padding_margin_2" />
         </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/padding_margin_1"
+        android:layout_marginStart="@dimen/padding_margin_1"
+        android:layout_marginEnd="@dimen/padding_margin_1"
         android:background="@android:color/darker_gray">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reviewer_opinions"
-            android:textSize="24sp"
+            android:textSize="@dimen/font_24"
             android:textColor="@android:color/white"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/padding_margin_2"
             android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/your_opinions_mean_a_lot_thanks_for_sending"
             android:gravity="center_horizontal"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textColor="@android:color/white"
-
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/padding_margin_2"
             android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/edit"
             android:textColor="@android:color/white"
             android:gravity="end"
-            android:textSize="24sp"
-            android:layout_margin="8dp"
+            android:textSize="@dimen/font_24"
+            android:layout_margin="@dimen/padding_margin_2"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -135,35 +143,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="@dimen/padding_margin_1"
+        android:layout_marginStart="@dimen/padding_margin_1"
+        android:layout_marginEnd="@dimen/padding_margin_1"
+        android:layout_marginBottom="@dimen/padding_margin_1"
         android:background="@android:color/darker_gray">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/review_this_album"
-            android:textSize="24sp"
+            android:textSize="@dimen/font_24"
             android:textColor="@android:color/white"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/padding_margin_2"
             android:textStyle="bold" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/saved_share"
             android:gravity="center_horizontal"
-            android:textSize="16sp"
+            android:textSize="@dimen/font_16"
             android:textColor="@android:color/white"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/padding_margin_2"
             android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="@dimen/padding_margin_2">
 
                 <TextView
                     android:id="@+id/facebook_login"
@@ -171,7 +179,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/share_on_facebook"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/font_18"
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
                     android:drawableTop="@drawable/facebook2"
@@ -183,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/share_on_twitter"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/font_18"
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
                     android:drawableTop="@drawable/twitter2"
@@ -195,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/share_on_google"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/font_18"
                     android:textColor="@android:color/white"
                     android:textAlignment="center"
                     android:drawableTop="@drawable/googleplus2"
@@ -208,8 +216,8 @@
             android:text="@string/see_your_review"
             android:textColor="@android:color/white"
             android:gravity="center_horizontal"
-            android:textSize="24sp"
-            android:layout_margin="8dp"
+            android:textSize="@dimen/font_24"
+            android:layout_margin="@dimen/padding_margin_2"
             android:textStyle="bold" />
         <TextView
             android:layout_width="match_parent"
@@ -217,8 +225,8 @@
             android:text="@string/edit"
             android:textColor="@android:color/white"
             android:gravity="end"
-            android:textSize="24sp"
-            android:layout_margin="8dp"
+            android:textSize="@dimen/font_24"
+            android:layout_margin="@dimen/padding_margin_2"
             android:textStyle="bold" />
 
     </LinearLayout>

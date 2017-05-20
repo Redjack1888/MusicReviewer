@@ -8,19 +8,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/album_text_view_explaination"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         android:background="@android:color/darker_gray"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="@dimen/font_16"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingTop="16dp">
+        android:paddingStart="@dimen/padding_margin_1"
+        android:paddingEnd="@dimen/padding_margin_1"
+        android:paddingTop="@dimen/padding_margin_1">
 
         <ImageView
             android:id="@+id/imageView"
@@ -35,16 +35,16 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="@dimen/padding_margin_1"
             android:orientation="vertical"
-            android:layout_marginLeft="16dp">
+            android:layout_marginLeft="@dimen/padding_margin_1">
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/album_title"
-                android:textSize="24sp"
+                android:textSize="@dimen/font_24"
                 android:textStyle="bold"/>
 
             <TextView
@@ -52,9 +52,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/band"
-                android:textSize="20sp"
+                android:textSize="@dimen/font_20"
                 android:textStyle="bold"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/padding_margin_1"
                 />
 
             <TextView
@@ -62,9 +62,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_name"
-                android:textSize="20sp"
+                android:textSize="@dimen/font_20"
                 android:textStyle="bold|italic"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="@dimen/padding_margin_1"/>
 
             <TextView
                 android:id="@+id/textView8"
@@ -72,9 +72,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/genres"
                 android:gravity="bottom"
-                android:textSize="20sp"
+                android:textSize="@dimen/font_20"
                 android:textStyle="italic"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="@dimen/padding_margin_1"/>
 
 
         </LinearLayout>
@@ -92,10 +92,10 @@
             android:layout_height="wrap_content"
             android:text="@string/release_date"
             android:layout_gravity="center_vertical"
-            android:textSize="20sp"
-            android:layout_marginStart="16dp"
+            android:textSize="@dimen/font_20"
+            android:layout_marginStart="@dimen/padding_margin_1"
             android:textStyle="bold|italic"
-            android:layout_marginLeft="16dp" />
+            android:layout_marginLeft="@dimen/padding_margin_1" />
 
         <TextView
             android:id="@+id/date_text"
@@ -104,7 +104,7 @@
             android:layout_weight="1"
             android:text="@string/date"
             android:layout_gravity="center_vertical"
-            android:textSize="20sp"
+            android:textSize="@dimen/font_20"
             android:textStyle="italic"/>
 
         <Button
@@ -113,8 +113,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/request"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp" />
+            android:layout_marginEnd="@dimen/padding_margin_1"
+            android:layout_marginRight="@dimen/padding_margin_1" />
 
     </LinearLayout>
 
@@ -122,8 +122,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/description"
-    android:padding="16dp"
-    android:textSize="24sp"
+    android:padding="@dimen/padding_margin_1"
+    android:textSize="@dimen/font_24"
     android:textStyle="bold" />
 
     <TextView
@@ -131,7 +131,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/album_description"
-        android:padding="16dp"
+        android:padding="@dimen/padding_margin_1"
         />
 
 </LinearLayout>
