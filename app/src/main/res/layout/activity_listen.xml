@@ -27,10 +27,7 @@
                 android:paddingTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/explaination"
                 tools:context="com.example.android.musicreviewer.AlbumsActivity">
-
-
 
                 <ImageView
                     android:id="@+id/cd_cover"
