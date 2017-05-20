@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Layout for a single list item -->
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,13 +18,13 @@
         android:layout_height="@dimen/list_item_height"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/image"
-        android:orientation="vertical"
-        android:paddingStart="@dimen/padding_margin_1"
-        android:layout_alignParentRight="true"
         android:layout_toRightOf="@id/image"
-        android:paddingLeft="@dimen/padding_margin_1">
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_margin_1"
+        android:paddingStart="@dimen/padding_margin_1">
 
         <TextView
             android:id="@+id/item_text_view"
@@ -53,11 +52,11 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="@dimen/padding_margin_1"
-        android:src="@drawable/ic_arrow_right_bold_black_24dp"
+        android:layout_marginRight="16dp"
         android:contentDescription="@string/arrow_icon"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="16dp" />
+        android:src="@drawable/ic_arrow_right_bold_black_24dp" />
 
 </RelativeLayout>

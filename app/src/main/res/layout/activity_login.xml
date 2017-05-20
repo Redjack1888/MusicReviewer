@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    >
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/font_16"
-        android:padding="@dimen/padding_margin_1"
         android:background="@android:color/darker_gray"
-    android:textColor="@android:color/white"
-        android:text="@string/login_text_view_explaination"/>
+        android:padding="@dimen/padding_margin_1"
+        android:text="@string/login_text_view_explaination"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_16" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/padding_margin_1"
         android:text="@string/login_with_socials"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
         android:textAlignment="center"
+        android:textColor="@android:color/white"
         android:textSize="@dimen/font_24"
-        android:padding="@dimen/padding_margin_1"/>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,36 +36,36 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/facebook"
-            android:textSize="@dimen/font_18"
-            android:textColor="@android:color/white"
-            android:textAlignment="center"
+            android:background="@android:color/transparent"
             android:drawableTop="@drawable/facebook2"
-            android:background="@android:color/transparent"/>
+            android:text="@string/facebook"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_18" />
 
         <TextView
             android:id="@+id/twitter_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/twitter"
-            android:textSize="@dimen/font_18"
-            android:textColor="@android:color/white"
-            android:textAlignment="center"
+            android:background="@android:color/transparent"
             android:drawableTop="@drawable/twitter2"
-            android:background="@android:color/transparent"/>
+            android:text="@string/twitter"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_18" />
 
         <TextView
             android:id="@+id/googleplus_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/googleplus"
-            android:textSize="@dimen/font_18"
-            android:textColor="@android:color/white"
-            android:textAlignment="center"
+            android:background="@android:color/transparent"
             android:drawableTop="@drawable/googleplus2"
-            android:background="@android:color/transparent"/>
+            android:text="@string/googleplus"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_18" />
 
     </LinearLayout>
 
@@ -74,99 +74,102 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="@dimen/padding_margin_1">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login_with_mail"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
             android:textAlignment="center"
-            android:textSize="@dimen/font_24"/>
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_24"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/username_mail"
-            android:textColorHint="@android:color/white"
-            android:textColor="@android:color/white"
             android:backgroundTint="@android:color/white"
+            android:hint="@string/username_mail"
             android:inputType="textMultiLine"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
             tools:targetApi="lollipop" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:textColorHint="@android:color/white"
-            android:textColor="@android:color/white"
             android:backgroundTint="@android:color/white"
+            android:hint="@string/password"
             android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
             tools:targetApi="lollipop" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity=""
-            android:paddingTop="@dimen/padding_margin_2"
-            android:paddingBottom="@dimen/padding_margin_1">
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_margin_1"
+            android:paddingTop="@dimen/padding_margin_2">
 
             <CheckBox
                 android:id="@+id/keepLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@android:color/white"
-                android:paddingStart="@dimen/padding_margin_2"
                 android:paddingEnd="@dimen/padding_margin_1"
+                android:paddingLeft="@dimen/padding_margin_2"
+                android:paddingRight="@dimen/padding_margin_1"
+                android:paddingStart="@dimen/padding_margin_2"
                 android:text="@string/keep_me_logged_in"
                 android:textColor="@android:color/white"
-                tools:targetApi="lollipop"
-                android:paddingLeft="@dimen/padding_margin_2"
-                android:paddingRight="@dimen/padding_margin_1" />
+                tools:targetApi="lollipop" />
 
             <Button
-            android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/submit"/>
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit" />
 
-            </LinearLayout>
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:paddingTop="@dimen/padding_margin_1"
-            android:paddingBottom="@dimen/padding_margin_1"
-            android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:background="@android:color/white"/>
+            android:layout_marginRight="50dp"
+            android:background="@android:color/white"
+            android:paddingBottom="@dimen/padding_margin_1"
+            android:paddingTop="@dimen/padding_margin_1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="20dp"
-            android:paddingBottom="@dimen/padding_margin_1">
+            android:paddingBottom="@dimen/padding_margin_1"
+            android:paddingTop="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/create_an_account"
-                android:textStyle="italic"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/font_16"/>
+                android:textSize="@dimen/font_16"
+                android:textStyle="italic" />
+
             <TextView
                 android:id="@+id/signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/sign_up"
-                android:textColor="@android:color/holo_red_light"
                 android:textAllCaps="true"
-                android:textStyle="bold|italic"
-                android:textSize="@dimen/font_24"/>
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/font_24"
+                android:textStyle="bold|italic" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

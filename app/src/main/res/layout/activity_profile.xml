@@ -64,10 +64,10 @@
             android:layout_alignParentRight="true"
             android:layout_below="@id/welcome"
             android:layout_gravity="end"
-            android:layout_toEndOf="@id/user_image"
-            android:layout_toRightOf="@id/user_image"
             android:layout_marginLeft="@dimen/padding_margin_1"
             android:layout_marginStart="@dimen/padding_margin_1"
+            android:layout_toEndOf="@id/user_image"
+            android:layout_toRightOf="@id/user_image"
             android:text="@string/email_address"
             android:textAlignment="viewEnd"
             android:textStyle="italic" />
@@ -145,11 +145,11 @@
             android:layout_alignParentRight="true"
             android:layout_below="@id/linearLayout"
             android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/padding_margin_2"
+            android:layout_marginStart="@dimen/padding_margin_2"
             android:drawableLeft="@drawable/flag_it"
             android:drawablePadding="@dimen/padding_margin_2"
             android:drawableStart="@drawable/flag_it"
-            android:layout_marginLeft="@dimen/padding_margin_2"
-            android:layout_marginStart="@dimen/padding_margin_2"
             android:text="@string/member_since_2017"
             android:textStyle="italic" />
     </RelativeLayout>

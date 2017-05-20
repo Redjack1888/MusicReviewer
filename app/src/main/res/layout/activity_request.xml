@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/request_text_view_explainationy_e_mail_to_the_user"
         android:background="@android:color/darker_gray"
         android:padding="@dimen/padding_margin_1"
+        android:text="@string/request_text_view_explainationy_e_mail_to_the_user"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/font_16"
-        />
+        android:textSize="@dimen/font_16" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/what_appeals"
         android:padding="@dimen/padding_margin_1"
+        android:text="@string/what_appeals"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/font_24"
-        android:textStyle="bold|italic"
-        android:textColor="@android:color/black"/>
+        android:textStyle="bold|italic" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,37 +50,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="@dimen/padding_margin_1"
-        >
+        android:padding="@dimen/padding_margin_1">
 
         <CheckBox
             android:id="@+id/checkBox4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:text="@string/reason3"
-            android:layout_gravity="center_vertical"/>
+            android:text="@string/reason3" />
 
         <CheckBox
             android:id="@+id/checkBox3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:text="@string/reason4"
-            android:layout_gravity="center_vertical"/>
+            android:text="@string/reason4" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/send_request"
-        tools:text="Send Request"
-        android:textStyle="bold"
-        android:textSize="@dimen/font_24"
-        android:paddingTop="@dimen/padding_margin_1"
+        android:layout_margin="@dimen/padding_margin_1"
         android:paddingBottom="@dimen/padding_margin_1"
-        android:layout_margin="@dimen/padding_margin_1"/>
+        android:paddingTop="@dimen/padding_margin_1"
+        android:text="@string/send_request"
+        android:textSize="@dimen/font_24"
+        android:textStyle="bold"
+        tools:text="Send Request" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
