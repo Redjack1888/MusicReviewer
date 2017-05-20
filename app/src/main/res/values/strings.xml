@@ -157,4 +157,7 @@
     <string name="playing_song_title">Playing Song Title</string>
     <string name="arrow_icon">arrow icon</string>
     <string name="settingstext_view_explaination">From here user can change personal profile informations, choose preferred music genres and devices in use, take a look on Badges and Rewards earned for his activities on the App and share them with friends on social networks, add details as contact info, birthday and more. He can then change password, mail account or completely delete the account.</string>
+    <string name="played_time">Played Time</string>
+    <string name="total_time">Total Time</string>
+    <string name="listen_text_view_explaination">From here user can use the MediaPlayer Interface and listen Album\'s tracks. This is a Collapsing Toolbar Layout so scrolling upward, Player disappear and selectable Traclist list appear. Clicking on player or on Tracks grant the user to move on entire tracklist</string>
 </resources>

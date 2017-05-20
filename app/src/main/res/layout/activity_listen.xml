@@ -30,6 +30,8 @@
                 android:layout_below="@+id/explaination"
                 tools:context="com.example.android.musicreviewer.AlbumsActivity">
 
+
+
                 <ImageView
                     android:id="@+id/cd_cover"
                     android:layout_width="match_parent"
@@ -41,7 +43,16 @@
                     android:paddingRight="@dimen/padding_margin_1"
                     app:srcCompat="@drawable/cd2"
                     android:contentDescription="@string/album_cover" />
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listen_text_view_explaination"
+                    android:padding="@dimen/padding_margin_1"
+                    android:layout_marginTop="24dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_16"
+                    />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -87,7 +98,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:text="Small Text"
+                            android:text="@string/played_time"
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/font_16"
                             android:layout_weight="1"
@@ -101,7 +112,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:text="Small Text"
+                            android:text="@string/total_time"
                             android:textColor="@android:color/white"
                             android:textSize="@dimen/font_16"
                             android:layout_weight="1"
