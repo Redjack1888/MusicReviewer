@@ -1,4 +1,6 @@
 # MusicReviewer
+![Cover](/assets/smartmockups_k7o08541.jpg)
+
 MusicalStructure (Project 4) for "Android Basics by Google Nanodegree Program" - (EU Scholarship) by Udacity
 
 ## Project Overview
