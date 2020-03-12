@@ -25,12 +25,12 @@ This project is about combining various ideas and skills we’ve been practicing
 <table style="margin-left: auto; margin-right: auto;" border="0">
 <tbody>
 <tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>  
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971852.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971910.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971934.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971950.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971980.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971994.png" width="125" height="222" /></td>  
 </tr>
 <tr>
 <td>7</td>
@@ -45,9 +45,17 @@ This project is about combining various ideas and skills we’ve been practicing
 <td>14</td>
 <td>15</td>
 <td>16</td>
-<td>171</td>
+<td>17</td>
 <td>18</td>  
-</tr>  
+</tr>
+<tr>
+<td>19</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>  
+</tr>    
 </tbody>
 </table>
 
