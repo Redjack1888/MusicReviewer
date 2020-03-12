@@ -41,15 +41,15 @@ This project is about combining various ideas and skills we’ve been practicing
 <td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972053.png" width="125" height="222" /></td>  
 </tr>
 <tr>
-<td>13</td>
-<td>14</td>
-<td>15</td>
-<td>16</td>
-<td>17</td>
-<td>18</td>  
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972067.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972081.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972106.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972122.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972199.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972211.png" width="125" height="222" /></td>  
 </tr>
 <tr>
-<td>19</td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972228.png" width="125" height="222" /></td>
 <td></td>
 <td></td>
 <td></td>
