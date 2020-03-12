@@ -33,12 +33,12 @@ This project is about combining various ideas and skills we’ve been practicing
 <td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971994.png" width="125" height="222" /></td>  
 </tr>
 <tr>
-<td>7</td>
-<td>8</td>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>  
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583971997.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972001.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972009.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972015.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972027.png" width="125" height="222" /></td>
+<td><img src="https://github.com/Redjack1888/MusicReviewer/blob/master/assets/Screenshot_1583972053.png" width="125" height="222" /></td>  
 </tr>
 <tr>
 <td>13</td>
